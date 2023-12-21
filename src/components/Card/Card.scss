@@ -1,0 +1,63 @@
+@import "../../index.scss";
+
+.card {
+  width: 500px;
+  text-align: center;
+  border-radius : 5px;
+  background-color: $base-color;
+  outline: none;
+  line-height: 2.2;
+  min-width: 552px;
+}
+.card__quote{
+    font-size : 27px;
+    padding : 30px  0 ;
+    flex-wrap: wrap;
+    line-height: 1.2;
+    text-align:center;
+   
+}
+.card__author{
+    text-align: right;
+    font-size: 17px;
+     }
+
+     @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+.card__margin{
+    margin: 0 50px;
+}
+.card__footer__icons__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    gap:10px;
+}
+.card__footer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.bi-telegram, .bi-twitter, .card__footer__button, a{
+font-size: 17px;
+background-color: red;
+border-radius: 5px;
+color : $base-color;
+border:none;
+outline: none;
+padding: 0 20px;
+&:hover {
+opacity: 0.7;
+cursor : pointer;
+}
+}
+.bi-telegram, .bi-twitter{
+    padding:0;
+}
+
+.bi-quote{
+    font-size: 30px;
+}
